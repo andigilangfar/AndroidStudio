@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#97BA65"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_below="@+id/logo"
+            android:src="@drawable/karakter" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Kendalikan uang dan kartu debitmu"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Gak khawatir boros atau kehilangan kartu! Atur dengan Card Center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/jeniusback"
+            android:outlineAmbientShadowColor="@color/white"
+            android:textColor="@color/white"
+            android:text="REGISTER"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button1"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="SAYA SUDAH PUNYA AKUN"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Version 2.28 | (7447)"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
