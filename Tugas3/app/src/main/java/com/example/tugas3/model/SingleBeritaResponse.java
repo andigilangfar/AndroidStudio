@@ -1,0 +1,42 @@
+package com.example.tugas3.model;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class SingleBeritaResponse {
+    @SerializedName("status")
+    @Expose
+    private String status;
+
+    @SerializedName("Message")
+    @Expose
+    private String message;
+
+    @SerializedName("data")
+    @Expose
+    private Berita data = null;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public Berita getData() {
+        return data;
+    }
+
+    public void setData(Berita data) {
+        this.data = data;
+    }
+}
