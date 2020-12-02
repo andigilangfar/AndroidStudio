@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tugas4</string>
+    <string name="pulsa">Pulsa</string>
+    <string name="paket">Paket Data</string>
+    <string name="rincian">Total</string>
+    <string name="desc">Lanjutkan Transaksi Anda</string>
+    <string name="bayar">Bayar</string>
+    <string name="berhasil">Transaksi Anda Berhasil</string>
+    <string name="home">Kembali ke Home</string>
+</resources>
