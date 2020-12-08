@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:id="@+id/userLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp">
+            <ImageView
+                android:id="@+id/userLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_users"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/userLayout"
+            android:layout_marginBottom="100dp">
+
+            <EditText
+                android:id="@+id/usernameET"
+                android:background="@drawable/corner_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/hint_username"
+                android:inputType="text"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:radius="100dp"
+                android:textColorHint="@color/grey"
+                android:layout_marginRight="20dp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/passswordET"
+                android:layout_below="@+id/usernameET"
+                android:background="@drawable/corner_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:radius="100dp"
+                android:textColorHint="@color/grey"
+                android:layout_marginRight="20dp"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/loginBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passswordET"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/login"
+                android:textColorHint="@color/grey"
+                android:backgroundTint="@color/teal_700"/>
+            <Button
+                android:id="@+id/registerBT"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/loginBT"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="200dp"
+                android:hint="@string/register"
+                android:textColorHint="@color/grey"
+                android:backgroundTint="@color/teal_700"/>
+
+            <Button
+                android:id="@+id/forgetBT"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/loginBT"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="-150dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/registerBT"
+                android:backgroundTint="@color/teal_700"
+                android:hint="@string/forget"
+                android:textColorHint="@color/grey" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="590dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/copyright"
+                android:textColor="@color/olive"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</ScrollView>
